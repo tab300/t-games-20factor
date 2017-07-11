@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/table.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="top_left">
+
+<select id="backdrop">
+  <option selected>Choose a new theme</option>
+  <option>Wooden Table</option>
+  <option>Dark Table</option>
+  <option>Green Table</option>
+</select>
+
+<div id="settings"><input type="text" id="counter" name="" value="0"></div>
+<div id="timer_div"><input type="text" id="timer" name="" value="20"></div>
+</div>
+
+<div class="pick-cards">
+    <div class="left-card" id="main_card">
+      0
+    </div>
+
+    <div class="right-cards" id="three">
+      3
+    </div>
+
+    <div class="right-cards" id="two">
+      2
+    </div>
+
+    <div class="right-cards" id="one">
+      1
+    </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="right-cards" id="six">
+      6
+    </div>
+
+    <div class="right-cards" id="five">
+      5
+    </div>
+
+    <div class="right-cards" id="four">
+      4
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="right-cards" id="nine">
+      9
+    </div>
+
+    <div class="right-cards" id="eight">
+      8
+    </div>
+
+    <div class="right-cards" id="seven">
+      7
+    </div>
+</div>
+
+<audio id="winner" controls>
+ <source src="horse.ogg" type="audio/ogg">
+ <source src="music/winner.wav" type="audio/wav">
+</audio>
+
+<audio id="loser" controls>
+ <source src="horse.ogg" type="audio/ogg">
+ <source src="music/loser.wav" type="audio/wav">
+</audio>
+
+<audio id="timeticker" controls>
+ <source src="horse.ogg" type="audio/ogg">
+ <source src="music/timeticker.wav" type="audio/wav">
+</audio>
+
+<script type="text/javascript" src="js/table.js"></script>
+</body>
+</html>

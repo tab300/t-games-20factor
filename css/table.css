@@ -1,0 +1,95 @@
+*{
+  font-family: Times New Roman;
+}
+
+#timer_div{
+  position: absolute;
+}
+
+#timer{
+  width: 100px;
+  height: 100px;
+  margin-left: 210px;
+  margin-top: 495px;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+  border-color: lightgrey;
+  border-width: 5px;
+  line-height: 100px;
+  font-size: 35px;
+  text-align: center;
+}
+
+body {
+  background-repeat: repeat;
+  margin: 30px;
+}
+
+.right-cards, .left-card{
+  font-size: 70px;
+  color: black;
+  position:absolute;
+  background-color: white;
+  width:100px;
+  visibility: visible;
+  height:150px;
+  line-height: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#settings-panel{
+  background-color: white;
+  display: none;
+  width: 150px;
+  height: 70px;
+}
+
+#winner, #loser, #timeticker{
+  display: none;
+}
+
+.right-cards:hover{
+  box-shadow: 5px 5px 5px 5px white;
+  cursor: pointer;
+}
+
+#settings{
+  color:white;
+  font-size:25px;
+  margin-top: 15px;
+  margin-left: 1%;
+}
+
+#counter{
+  color: black;
+  margin-left:11%;
+  position: absolute;
+  border-style: solid;
+  border-width: thin;
+  width: 190px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#main_card{
+  font-size: 60px;
+  margin-left: 12%;
+  margin-top: 8%;
+  width:190px;
+  height:300px;
+  line-height: 300px;
+}
+
+#three, #six, #nine{
+  margin-left:75%;
+}
+
+#two, #five, #eight{
+  margin-left:65%;
+}
+
+#one, #four, #seven{
+  margin-left:55%;
+}
