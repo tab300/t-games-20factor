@@ -9,8 +9,19 @@ var right_cards = document.getElementsByClassName("right-cards")
 var backdrop = document.getElementById("backdrop")
 var body = document.querySelector("body")
 var timercount = 0
+var newFactorArray = []
 var timer = document.getElementById("timer")
 var instruction = "Continue to another round of the game.\n\n         ------------  Ready?  ------------"
+
+// function findFactor(){
+ // for(var index = 0; index < right_cards.length; index++){
+ //     if(parseInt(main_card.innerHTML) % parseInt(right_cards[index].innerHTML) === 0){
+ //        newFactorArray.push(parseInt(right_cards[index].innerHTML))
+ //      }
+ //  }
+// }
+
+// findFactor()
 
 // Prevent direct entry of values into the counter and avoiding "cheating"
 counter.onfocus = function(){
@@ -31,12 +42,15 @@ var flipCard = function(){
       right_cards[index].innerHTML = "Missed"
       right_cards[index].innerText = "Missed"
       right_cards[index].style.fontSize = "15px"
+      newFactorArray.push(parseInt(right_cards[index].innerHTML))
     }
   }
 
   // Message to display the score and confirm if the player wants to play again
   if(confirm("Your score this round was: "
-      + counter.value + "(" + counter.value/100 *  + "%)") === true){
+      + counter.value + "\n (You got "
+      + Math.round((counter.value/newFactorArray.length * 100))
+      + "% right.)") === true){
     if(counter.value !== 0){
       counter.value = 0
     }
@@ -60,6 +74,8 @@ var clock = function(){
 // Timing the duration of each round of the game
 if(confirm(instruction) === true){
   counter.value = 0
+  counter.style.color = "orange"
+  main_card.style.color = "lightseagreen"
   main_card.innerHTML = Math.round(Math.random() * 2000)
   setInterval(clock, 1000)
   setInterval(flipCard, 20000)

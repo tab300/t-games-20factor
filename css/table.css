@@ -50,6 +50,10 @@ body {
   display: none;
 }
 
+.right-cards{
+  color: green;
+}
+
 .right-cards:hover{
   box-shadow: 5px 5px 5px 5px white;
   cursor: pointer;
