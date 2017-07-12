@@ -13,16 +13,6 @@ var newFactorArray = []
 var timer = document.getElementById("timer")
 var instruction = "Continue to another round of the game.\n\n         ------------  Ready?  ------------"
 
-// function findFactor(){
- // for(var index = 0; index < right_cards.length; index++){
- //     if(parseInt(main_card.innerHTML) % parseInt(right_cards[index].innerHTML) === 0){
- //        newFactorArray.push(parseInt(right_cards[index].innerHTML))
- //      }
- //  }
-// }
-
-// findFactor()
-
 // Prevent direct entry of values into the counter and avoiding "cheating"
 counter.onfocus = function(){
   this.disabled = true
