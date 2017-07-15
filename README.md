@@ -1,4 +1,4 @@
-#20Factor 
+# 20Factor 
 It is a card game built with HTML5, CSS3, and JavaScript
 
 Here is the presentation of the game on Heroku:
