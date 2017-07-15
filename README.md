@@ -1,5 +1,4 @@
-# t-games-20factor
-A simple card game built with HTML5, CSS3, and JavaScript
+20Factor is a simple card game built with HTML5, CSS3, and JavaScript
 
 Here is the presentation of the game on Heroku:
 
