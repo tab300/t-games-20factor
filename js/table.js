@@ -11,11 +11,9 @@ var body = document.querySelector("body")
 var timercount = 0
 var newFactorArray = []
 var timer = document.getElementById("timer")
-<<<<<<< HEAD
 var instruction = "\n\n         ------------  READY?  ------------"
-=======
 var instruction = "Continue to another round of the game.\n\n         ------------  Ready?  ------------"
->>>>>>> 123989d3ec765dc427e05c6ff530ebca3bb2dfee
+
 
 // Prevent direct entry of values into the counter and avoiding "cheating"
 counter.onfocus = function(){
