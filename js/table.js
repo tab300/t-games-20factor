@@ -12,7 +12,6 @@ var timercount = 0
 var newFactorArray = []
 var timer = document.getElementById("timer")
 var instruction = "\n\n         ------------  READY?  ------------"
-var instruction = "Continue to another round of the game.\n\n         ------------  Ready?  ------------"
 
 
 // Prevent direct entry of values into the counter and avoiding "cheating"
