@@ -101,7 +101,7 @@ for (var index = 0; index < right_cards.length; index++){
 // Change the background theme of the game
 var backdrop_change = function(){
   if(backdrop.value === "Wooden Table"){
-    body.style.backgroundImage = "url('images/hardwood.png')"
+    body.style.backgroundImage = "url('images/hard_wood.png')"
   }else if(backdrop.value === "Green Table"){
     body.style.backgroundImage = "url('images/green_table.png')"
   }else{
