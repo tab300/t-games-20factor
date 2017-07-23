@@ -14,7 +14,7 @@ var timer = document.getElementById("timer")
 var instruction = "\n\n         ------------  READY?  ------------"
 
 
-// Prevent direct entry of values into the counter and avoiding "cheating"
+// Disable the counter from being edited
 counter.onfocus = function(){
   this.disabled = true
 }
@@ -70,14 +70,12 @@ if(confirm(instruction) === true){
   main_card.innerHTML = Math.round(Math.random() * 2000)
   setInterval(clock, 1000)
   setInterval(flipCard, 20000)
-
 }else{
   window.location.href = "home.html"
 }
 
 // Dealing with each element of the class "right-cards" when it is clicked
-for (var index = 0; index < right_cards.length; index++)
-{
+for (var index = 0; index < right_cards.length; index++){
   right_cards[index].onclick = function(){
     if(parseInt(main_card.innerHTML) % parseInt(this.innerHTML) === 0){
       this.style.boxShadow = "5px 5px 5px green"
@@ -88,7 +86,6 @@ for (var index = 0; index < right_cards.length; index++)
       }
       this.style.visibility = "hidden"
       counter.value = parseInt(counter.value) + 1
-
     }else{
       this.style.boxShadow = "5px 5px 5px red"
       this.style.webkitBoxShadow = "5px 5px 5px red"
